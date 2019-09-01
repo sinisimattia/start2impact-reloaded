@@ -1,0 +1,264 @@
+div.header{
+	position: sticky;
+	top: 0;
+}
+
+div#home-banner{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div#instant-info {
+	display: block;
+	max-width: 700px !important;
+	/*word-wrap: none;*/
+	margin: auto;
+}
+
+div#instant-info .icon, .swipe-down img{
+	width: 100px;
+	height: auto;
+}
+
+.swipe-down{
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin: auto;
+
+	max-width: 100px;
+}
+
+div#instant-info hr{
+	border: 0.4px dotted #FFF;
+}
+
+div#figures {
+	grid-template-rows: auto;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+
+	grid-template-areas:
+	"inactive guides companies value";
+
+	padding: 20px 0;
+}
+
+div#figures div#inactive{
+	grid-area: inactive;
+}
+
+div#figures div#guides{
+	grid-area: guides;
+}
+
+div#figures div#companies{
+	grid-area: companies;
+}
+
+div#figures div#value{
+	grid-area: value;
+}
+
+div#figures .title{
+	font-size: 64px;
+}
+
+div#figures .item{
+	padding: 0 20px;
+}
+
+div#coach-title, div#student-title, div#credits-title{
+	text-align: center;
+}
+
+div#coaches{
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+
+	grid-template-areas:
+	"ac fs"
+	"acr fsr";
+}
+
+div#coaches img{
+	margin: auto;
+}
+
+div#coaches #andrea-campana{
+	grid-area: ac;
+}
+
+div#coaches #andrea-campana-radar{
+	grid-area: acr;
+	width: 400px;
+	margin-left: auto;
+}
+
+div#coaches #federico-sbandi{
+	grid-area: fs;
+}
+
+div#coaches #federico-sbandi-radar{
+	grid-area: fsr;
+	width: 400px;
+	margin-right: auto;
+}
+
+div#students{
+	grid-gap: 10px;
+}
+
+div#credits{
+	grid-gap: 10px;
+}
+
+div#credits img{
+	transition: filter 0.3s;
+	max-height: 100px;
+	width: auto;
+	filter: grayscale(100);
+	margin: auto 10px;
+}
+
+div#credits a:hover img{
+	transition: filter 0.3s;
+	filter: grayscale(0);
+}
+
+div.badge{
+	text-align: center;
+	width: 300px;
+	margin-top: 0;
+	position: relative;
+}
+
+div.badge .title{
+	font-size: 20px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+
+div.badge img{
+	width: auto;
+	height: 121px;
+}
+
+div.badge .descr{
+	font-size: 16px;
+}
+
+div.tiny-badge{
+	width: 130px;
+	margin: auto;
+	cursor: pointer;
+}
+
+div.tiny-badge img, div.tiny-badge div.img{
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 71px;
+	height: 71px;
+}
+
+div.tiny-badge:hover{
+	transition: color 0.3s;
+	color: var(--green);
+}
+
+div.tiny-badge .descr{
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+div.arguments, div.arguments .triple{
+	grid-gap: 5px;
+}
+
+div#free-packages .cta-green, div#successes .cta-green{
+	margin-top: 30px;
+}
+
+div#free-packages, div#successes{
+	padding-bottom: 50px;
+}
+
+div#disclaimer .title{
+	font-size: 20px;
+}
+
+div#skills .descr{
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#skills #chart-wrapper{
+	max-width: 700px;
+	margin: auto;
+}
+
+.swal-title{
+	font-family: "Montserrat Bold";
+	color: var(--dark);
+}
+
+.swal-text{
+	font-family: "Montserrat";
+	color: var(--dark);
+}
+
+.swal-button{
+	background-color: var(--green);
+}
+
+.swal-button:hover{
+	background-color: var(--yellow);
+}
+
+@media screen and ( max-width: 700px ){
+	div.badge{
+		text-align: center;
+		width: 300px;
+		margin: 10px auto;
+		position: relative;
+	}
+
+	div.badge img{
+		width: auto;
+		height: 100px;
+	}
+
+	div#coaches{
+		display: block !important;
+		padding: 0 25%;
+	}
+
+	div#skills .descr, div#skills #chart-wrapper{
+		max-width: 350px;
+	}
+
+	div.tiny-badge{
+		width: 250px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	div.tiny-badge img, div.tiny-badge div.img{
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	div#credits img{
+		max-height: 70px;
+		width: auto;
+
+		margin: 10px auto !important;
+	}
+}

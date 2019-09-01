@@ -1,0 +1,32 @@
+div.banner{
+	min-height: 0 !important;
+}
+
+div#instant-info{
+	padding-bottom: 0 !important;
+}
+
+div#instant-info img{
+	max-height: 400px;
+	width: auto;
+}
+
+div.item, div#quote, div.member{
+	padding: 20px;
+	margin: 30px;
+	border: 2px dotted var(--light);
+}
+
+.descr{
+	font-family: Montserrat;
+}
+
+div#team{
+	padding: 0 50px;
+}
+
+div.member{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}

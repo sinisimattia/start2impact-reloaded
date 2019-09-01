@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="IT-it">
+
+<head>
+	<title>start2impact</title>
+	<link href="style/home.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+	<link href="img/s2i_logo.png" rel="icon">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="scripts/radar-chart.js"></script>
+    <script src="scripts/sweetalert.min.js"></script>
+    <script src="scripts/vue.min.js"></script>
+	<script src="scripts/s2i-tools.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+<div id="s2i_tools">
+	<!-- MAIN BANNER -->
+	<div id="home-banner" class="banner dark fullscreen" style="background-image: url('img/banner.jpg');">
+		<div id="instant-info" class="fade-up">
+			<img src="img/startup.png" alt="La nostra missione" class="icon">
+			<p class="title">DIAMO AI GIOVANI COMPETENZE E NETWORK PER CAMBIARE IL MONDO</p>
+
+			<p class="descr">Troppo bello per essere vero?</p>
+
+			<!--<hr class="wrapper">
+
+			<a class="sub-title" href="#">&lt;Scopri la nostra community&gt;</a>-->
+
+			<swipe img="img/down-arrow.png" imgclass="icon" class="swipe-down oscillating"></swipe>
+		</div>
+	</div>
+
+	<!-- HEADER -->
+	<div class="dark header">
+		<div class="wrapper grid" id="header">
+			<div id="school">
+				<a class="link" href="studenti-come-funziona.html" target="_blank">Studenti</a>
+				<a class="link" href="scuole.html" target="_blank">Scuole</a>
+			</div>
+
+			<div id="logo-wrp">
+				<a class="link title" href="index.html"><span id="s2i">start2impact</span><img id="logo" src="img/s2i_logo.png" alt="[=o)>]"></a>
+			</div>
+
+			<div id="contact">
+				<a class="link" href="mailto:gv@start2impact.com" target="_blank">Contatti</a>
+				<a class="link" href="register.html" target="_blank">Accedi</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="dark fullscreen">
+		<p class="title internal-vertical">Offriamo competenze su...</p>
+
+		<div class="arguments internal-vertical wrapper badges">
+			<div class="triple item-1">
+				<badge class="item-1" img="img/chess.png" title="MINDSET" descr="Inquadra i tuoi obiettivi, raggira i problemi e levora con la giusta mentalità. Questa è la chiave del successo."></badge>
+
+				<badge class="item-2" img="img/digital-marketing.png" title="DIGITAL MARKETING" descr="Fai crescere il tuo brand online, impara a capire i tuoi clienti e le loro richieste e capisci come piazzare annunci su varie piattaforme social."></badge>
+
+				<badge class="item-3" img="img/programmazione.png" title="PROGRAMMAZIONE WEB" descr="Costruisci un sito, sia dal lato visivo ed interattivo e sia da dietro le quinte ( lato server )."></badge>
+			</div>
+
+			<div class="triple item-2">
+				<badge class="item-1" img="img/VR.png" title="REALTÀ VIRTUALE" descr="Un mercato in forte crescita in tutto il mondo, la realtà virtuale può essere utilizzata per molto più che solo intrattenimento. Fai immergere gli utenti in un'esperienza virtuale senza precedenti."></badge>
+
+				<badge class="item-2" img="img/UI-UX.png" title="UI/UX DESIGN" descr="Impara come rendere l'esperienza degli utenti col tuo prodotto piacevole ed intuitiva."></badge>
+
+				<badge class="item-3" img="img/data-intelligence.png" title="DATA INTELLIGENCE" descr="Organizzazione di grandi quantità di dati, indispensabile per qualsiasi servizio che debba gestire un eneorme database."></badge>
+			</div>
+
+			<div class="triple item-3">
+				<badge class="item-1" img="img/industria-40.png" title="INDUSTRIA 4.0" descr="Studia i pilastri della nuova industria, essenziale per muoverti fra le aziende del futuro."></badge>
+
+				<badge class="item-2" img="img/AI.png" title="INTELLIGENZA ARTIFICIALE" descr="Gli esperti in questo settore sono fra i più ricercati, realizza algoritmi capaci di imparare da ciò che fornisci e di realizzare qualcosa di nuovo basato sulle conoscenze acquisite."></badge>
+
+				<badge class="item-3" img="img/blockchain.png" title="BLOCKCHAIN" descr="Molto richiesto da moltissime aziende e fondamentale per il trattamento di record dati in sicurezza, questo grazie alla sua struttura ed organizzazione dei 'blocchi'."></badge>
+
+			</div>
+		</div>
+
+		<swipe img="img/down-arrow.png" imgclass="icon" class="swipe-down oscillating" dir="down"></swipe>
+	</div>
+
+	<div class="spaced-vertical wrapper" id="skills">
+		<p class="title">Come ti vedono le aziende?</p>
+		<hr>
+		<p class="descr">Ogni azienda sceglie in base alle competenze, noi le visualizziamo e le presentiamo a chi vuole assumerti.</p>
+
+		<radar-chart></radar-chart>
+	</div>
+
+	<hr>
+
+	<div class="spaced-vertical wrapper">
+		<div class="triple">
+			<div class="item-1 badge">
+				<img src="img/rocket-pc.png">
+				<p class="title">Cosa offriamo?</p>
+				<p class="descr">Fino a 400 ore di Corsi Online e Prove Pratiche per Scoprire Nuovi Mondi, Sviluppare e Certificare Competenze Digitali e Trasversali</p>
+			</div>
+
+			<div class="item-2 badge">
+				<img src="img/badge.png">
+				<p class="title">E dopo l'Alternanza?</p>
+				<p class="descr">Ai migliori talenti vengono offerte opportunità di lavoro in imprese tradizionali e aziende innovative del network di start2impact</p>
+			</div>
+
+			<div class="item-3 badge">
+				<img src="img/rubrica.png">
+				<p class="title">Perché nasce start2impact?</p>
+				<p class="descr">Per vincere il paradosso di avere 500.000 giovani disoccupati e 1 milione di lavori che le aziende non riescono a coprire per mancanza di competenze</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="spaced-vertical wrapper" id="our-choices">
+		<div class="spaced-vertical triple">
+			<div class="item-1 badge">
+				<img src="img/school.png">
+				<p class="title">A chi è rivolto?</p>
+				<p class="descr">Ad ogni tipologia di Scuola perché secondo la Commissione Europea il 90% dei lavori richiederà Competenze Digitali entro il 2020</p>
+			</div>
+
+			<div class="item-2 badge">
+				<img src="img/monitor.png">
+				<p class="title">Quanti studenti accogliamo?</p>
+				<p class="descr">Tutti gli studenti del triennio possono accedere in ogni momento da Pc, Tablet e Cellulare alla nostra Piattaforma Web senza sottrarre tempo al programma scolastico</p>
+			</div>
+
+			<div class="item-3 badge">
+				<img src="img/on-off.png">
+				<p class="title">Che vantaggi ha il docente?</p>
+				<p class="descr">Ha un’area dedicata in cui vedere tutti i contenuti, monitorare i progressi e scaricare il report con le ore fatte da ogni studente</p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="larger-wrapper spaced-vertical">
+		<div id="coach-title">
+			<p class="title">I tuoi super coach</p>
+			<p class="descr">Allenati con loro e realizza quello che gli altri possono solo sognare.</p>
+		</div>
+
+		<div class="grid" id="coaches">
+			<img src="img/andrea-campana-new.jpg" id="andrea-campana">
+			<img src="img/andrea-campana-radar.jpg" id="andrea-campana-radar">
+
+			<img src="img/federico-sbandi-new.jpg" id="federico-sbandi">
+			<img src="img/federico-sbandi-radar.jpg" id="federico-sbandi-radar">
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="larger-wrapper spaced-vertical">
+		<div id="credits-title">
+			<p class="title">Riconoscimenti</p>
+			<p class="descr">Da Istituzioni, Investitori e Media.</p>
+		</div>
+
+		<br>
+
+		<div class="quadruple" id="credits">
+			<a href="#"><img src="img/CE.png" class="item-1" id="CE"></a>
+			<a href="#"><img src="img/anpal.png" class="item-2" id="anpal"></a>
+			<a href="#"><img src="img/bheroes.png" class="item-3" id="bheroes"></a>
+			<a href="#"><img src="img/rai3.png" class="item-4" id="rai3"></a>
+		</div>
+
+		<div class="cta-yellow">
+			<div class="cta-yellow"><a class="link">Scopri di più</a></div>
+		</div>
+	</div>
+
+	<swipe dir="top">
+		<p class="title link"><u>Torna Su</u></p>
+	</swipe>
+
+	<!-- FOOTER -->
+	<div class="dark footer">
+		<div class="wrapper grid" id="footer-links">
+			<div id="info">
+				<a class="link" href="chi-siamo.html" target="_blank">Chi Siamo</a>
+				<a class="link" href="blog.html" target="_blank">Blog</a>
+			</div>
+
+			<a class="link" id="privacy" href="privacy.html" target="_blank">Privacy</a>
+		</div>
+
+		<div class="wrapper" id="legal-info"><a class="light">start2impact srl - Startup Innovativa a Vocazione Sociale © 2017- 2018 | PIVA 10104990964</a></div>
+	</div>
+</div>
+</body>
+
+<script>
+	s2i_tools_setup();
+</script>
+
+</html>

@@ -1,0 +1,82 @@
+div#icon-wrapper{
+	width: 300px;
+	margin: auto;
+}
+
+img#icon{
+	height: 240px;
+	width: auto;
+	margin: auto;
+}
+
+div#panel{
+	display: grid;
+
+	grid-template-rows: repeat( 3, auto );
+	grid-template-columns: repeat( 2, auto );
+
+	grid-template-areas:
+	"email email"
+	"name surname"
+	"motivation motivation";
+
+	grid-gap: 10px;
+}
+
+input, textarea{
+	font-size: 20px;
+}
+
+textarea{
+	resize: vertical;
+	min-height: 100px;
+}
+
+input#email{
+	grid-area: email;
+}
+
+input#name{
+	grid-area: name;
+}
+
+input#surname{
+	grid-area: surname;
+}
+
+textarea#motivation{
+	grid-area: motivation;
+}
+
+div#panel-wrapper{
+	max-width: 700px;
+	padding: 20px;
+}
+
+input#submit{
+	width: 100%;
+	margin: 10px auto;
+	border: none;
+	background-color: var(--yellow);
+	color: var(--light);
+	font-family: Montserrat;
+}
+
+input#submit:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+@media screen and ( max-device-width: 700px ){
+	div#panel{
+		display: block;
+	}
+
+	div#panel input, div#panel textarea{
+		margin: 7px auto;
+	}
+
+	img#icon{
+		display: none;
+	}
+}

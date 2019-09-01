@@ -1,0 +1,36 @@
+div#come-funziona .title{
+	text-align: center !important;
+	font-size: 70px;
+}
+
+div.section{
+	padding: 30px;
+}
+
+div.section *{
+	text-align: left;
+}
+
+div#requirements{
+	grid-template-columns: repeat( 2, auto );
+	grid-template-rows: repeat( 4, auto );
+	grid-template-areas:
+	"i1 i1"
+	"i2 i3"
+	"i4 i4"
+	"i5 i6";
+}
+
+.item-5{
+	grid-area: i5;
+}
+
+.item-6{
+	grid-area: i6;
+}
+
+@media screen and ( max-device-width: 700px ){
+	div#come-funziona .title{
+		font-size: 60px;
+	}
+}

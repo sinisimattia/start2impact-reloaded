@@ -1,0 +1,122 @@
+.title{
+	text-transform: none !important;
+	text-align: center !important;
+}
+
+.wrapper{
+	max-width: 950px !important;
+}
+
+.larger-wrapper{
+	max-width: 1300px !important;
+}
+
+.internal-vertical{
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+
+.descr{
+	text-align: center !important;
+}
+
+div#astronaut-banner{
+	min-height: 750px;
+
+	background-size: cover;
+	background-position: center;
+
+	display: grid;
+
+	grid-template-columns: auto;
+	grid-template-rows: 200px auto;
+
+	grid-template-areas:
+	"."
+	"info";
+}
+
+div#astronaut-banner div#instant-info{
+	grid-area: info;
+	padding: 55px;
+	padding-bottom: 0;
+	max-width: 850px;
+}
+
+div#astronaut-banner div#instant-info .title{
+	font-size: 48px;
+	line-height: 50px;
+}
+
+div#astronaut-banner div#instant-info .cta-green{
+	margin-bottom: 0;
+}
+
+div#why-us .title{
+	max-width: 850px !important;
+	margin: auto;
+}
+
+div.badge{
+	text-align: center;
+	width: 300px;
+	margin-top: 0;
+}
+
+div.badge .title{
+	font-size: 20px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+
+div.badge img{
+	width: auto;
+	height: 121px
+}
+
+div.badge .descr{
+	font-size: 16px;
+}
+
+div.tiny-badge{
+	width: 130px;
+}
+
+div.tiny-badge img, div.tiny-badge div.img{
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 71px;
+	height: 71px;
+}
+
+div.tiny-badge .descr{
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+div.arguments, div.arguments .triple{
+	column-gap: 5px;
+}
+
+div#free-packages .cta-green, div#successes .cta-green{
+	margin-top: 30px;
+}
+
+div#free-packages, div#successes{
+	padding-bottom: 50px;
+}
+
+div#disclaimer .title{
+	font-size: 20px;
+}
+
+@media screen and ( max-device-width: 700px ){
+	div#astronaut-banner div#instant-info{
+		padding: 0 !important;
+	}
+
+	div.badge{
+		margin: 25px auto;
+	}
+}
